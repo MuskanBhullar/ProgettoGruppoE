@@ -42,7 +42,7 @@ public class InserisciUtente extends HttpServlet {
             // Preparo la query
             Statement query = connessione.createStatement();
 
-            String SQL = "INSERT INTO utenti (nome, cognome, eta, email, password)" + 
+            String SQL = "INSERT INTO utenti (nome, cognome, eta, email, password) " + 
                     "VALUES('" + nome + "', '" + cognome + "', '" + eta + "', '" + email +"', '" + psw +"')";
             
             // Eseguo la query
@@ -51,6 +51,7 @@ public class InserisciUtente extends HttpServlet {
             request.setAttribute("messaggio", "Registrazione avvenuta con successo.");
             request.setAttribute("coloreMessaggio", "green");
 
+            
             // Inoltro la richiesta
             request.getServletContext().getRequestDispatcher("/registrati.jsp").forward(request, response);
 

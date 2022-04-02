@@ -28,6 +28,7 @@
                                 <a class="nav-link" href="ordini.jsp">Ordini</a>
                                 <a class="nav-link active" href="registrati.jsp">Registrati</a>
                                 <a class="nav-link" href="accedi.jsp">Accedi</a>
+                                <a class="nav-link" href="elimina.jsp">Elimina</a>
                             </div>
                         </div>
                     </div>

@@ -24,10 +24,11 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav text-center">
-                                <a class="nav-link" href="auto.jsp">Auto</a>
+                                <a class="nav-link active" href="auto.jsp">Auto</a>
                                 <a class="nav-link" href="ordini.jsp">Ordini</a>
-                                <a class="nav-link active" href="registrati.jsp">Registrati</a>
+                                <a class="nav-link" href="registrati.jsp">Registrati</a>
                                 <a class="nav-link" href="accedi.jsp">Accedi</a>
+                                <a class="nav-link" href="elimina.jsp">Elimina</a>
                             </div>
                         </div>
                     </div>
