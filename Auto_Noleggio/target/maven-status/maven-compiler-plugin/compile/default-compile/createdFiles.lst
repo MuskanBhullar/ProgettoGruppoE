@@ -1,0 +1,4 @@
+Database\DatabaseManager.class
+Servlet\LeggiUtenti.class
+Servlet\RegistraUtente.class
+Models\Utente.class
