@@ -13,23 +13,35 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     </head>
     <body>
-        <form>
+        <div class="bg-image" 
+     style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+            height: 100vh">
+
+        <form action="accedi" method="POST">
+            <br> <br>
             <div id="container">
                 <div class="row justify-content-center">
                     <div class="col-12 d-flex justify-content-center">
+                        <h3>Accedi</h3>
+                    </div>
+                </div>
+                <br> <br>
+                <div class="row justify-content-center">
+                    <div class="col-12 d-flex justify-content-center">
+                        
                         <div class="form-outline mb-4">
-                            <input type="email" id="form2Example1" class="form-control" />
-                            <label class="form-label" for="form2Example1">Email address</label>
+                            <label class="form-label">Email address</label>
+                            <input type="email" name="emailUtente" class="form-control" />
                         </div>
 
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-8 d-flex justify-content-center">
-                        <!-- Password input -->
+         
                         <div class="form-outline mb-4">
-                            <input type="password" id="form2Example2" class="form-control" />
-                            <label class="form-label" for="form2Example2">Password</label>
+                            <label class="form-label">Password</label>
+                            <input type="password" name="passwordUtente" class="form-control" />
                         </div>
 
                     </div>
@@ -37,7 +49,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-12 d-flex justify-content-center">
-                        <button type="button" class="btn btn-primary btn-block mb-4">Accedi</button>
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Accedi</button>
                     </div>
                 </div>
                 <!-- Register buttons -->
@@ -45,6 +57,7 @@
                     <p>Not a member? <a href="registrati.jsp">Register</a></p>
                 </div>
 
+            </div>
             </div>
         </form>
     </body>
