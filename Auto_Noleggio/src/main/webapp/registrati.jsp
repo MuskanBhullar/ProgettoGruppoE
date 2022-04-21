@@ -1,4 +1,3 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -14,7 +13,6 @@
     </head>
     <body>
         <div id="container">
-            <br>
             <div class="row justify-content-center" style="margin-top: 15px;">
                 <h3 style="text-align: center;">Registrati:</h3>
             </div> <br>
@@ -29,7 +27,7 @@
             %>
             <div class="row justify-content-center">
                 <div class="col-8 d-flex justify-content-center ">
-                    <form action="index.jsp" method="POST">
+                    <form action="registrati" method="POST">
                         <div class="mb-3">
                             <label class="form-label">Cognome</label>
                             <input type="text" class="form-control" name="cognomeUtente">

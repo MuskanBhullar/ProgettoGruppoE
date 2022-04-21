@@ -23,7 +23,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav text-center">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.jsp">Home</a>
 
                                 <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Auto</a>
@@ -36,97 +36,157 @@
                                     </div>
                                 </li>
                                 <a class="nav-link" href="ordini.jsp">Ordini</a>
-                                <a class="nav-link" href="accedi.jsp">Accedi</a>
+                                
                             </div>
                         </div>
                     </div>
                 </nav>
             </div>
-         
+            <form action="ordini" method="POST">
             <div class="row gap100">
                 <div class="col-md-6 col-lg-3">
                     <img src="image/Opel Corsa.jpg" class="img-fluid" alt="opel">
                 </div>
                 <div class="col-md-6">
                     <h3>Opel Corsa</h3>
-                    <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della 
-                        tipografia e della stampa. Lorem Ipsum è considerato il testo 
-                        segnaposto standard sin dal sedicesimo secolo, quando un anonimo 
-                        tipografo prese una cassetta di caratteri e li assemblò per preparare 
+                    <p> Data di ritiro : <input type="date"> <br />
+                        Data di consegna : <input type="date"> <br /> 
+                        Luogo di ritiro : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                        Luogo di consegna : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                            <b>Prezzo giornaliero: 20,00€ </b><br>
+                        <input type="submit" class="btn btn-primary" value="Aggiungi all'ordine" />
                     </p>
                 </div>
             </div>
-            
+            <br><br>
             <div class="row gap100">
                 <div class="col-md-6 col-lg-3">
                     <img src="image/Fiat 500.jpg" class="img-fluid" alt="opel">
                 </div>
                 <div class="col-md-6">
                     <h3>Fiat 500</h3>
-                    <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della 
-                        tipografia e della stampa. Lorem Ipsum è considerato il testo 
-                        segnaposto standard sin dal sedicesimo secolo, quando un anonimo 
-                        tipografo prese una cassetta di caratteri e li assemblò per preparare 
+                    <p> Data di ritiro : <input type="date"> <br />
+                        Data di consegna : <input type="date"> <br /> 
+                        Luogo di ritiro : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                        Luogo di consegna : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                            <b>Prezzo giornaliero: 16,42€ </b><br>
+                        <input type="submit" class="btn btn-primary" value="Aggiungi all'ordine" />
                     </p>
                 </div>
             </div>
-            
+            <br><br>
             <div class="row gap100">
                 <div class="col-md-6 col-lg-3">
                     <img src="image/Toyota iQ.jpg" class="img-fluid" alt="opel">
                 </div>
                 <div class="col-md-6">
                     <h3>Toyota iQ</h3>
-                    <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della 
-                        tipografia e della stampa. Lorem Ipsum è considerato il testo 
-                        segnaposto standard sin dal sedicesimo secolo, quando un anonimo 
-                        tipografo prese una cassetta di caratteri e li assemblò per preparare 
+                    <p> Data di ritiro : <input type="date"> <br />
+                        Data di consegna : <input type="date"> <br /> 
+                        Luogo di ritiro : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                        Luogo di consegna : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                            <b>Prezzo giornaliero: 16,79€ </b><br>
+                        <input type="submit" class="btn btn-primary" value="Aggiungi all'ordine" />
                     </p>
                 </div>
             </div>
-            
+            <br><br>
             <div class="row gap100">
                 <div class="col-md-6 col-lg-3">
                     <img src="image/Renault Clio.jpg" class="img-fluid" alt="opel">
                 </div>
                 <div class="col-md-6">
                     <h3>Renault Clio</h3>
-                    <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della 
-                        tipografia e della stampa. Lorem Ipsum è considerato il testo 
-                        segnaposto standard sin dal sedicesimo secolo, quando un anonimo 
-                        tipografo prese una cassetta di caratteri e li assemblò per preparare 
+                    <p> Data di ritiro : <input type="date"> <br />
+                        Data di consegna : <input type="date"> <br /> 
+                        Luogo di ritiro : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                        Luogo di consegna : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                            <b>Prezzo giornaliero: 19,69€ </b><br>
+                        <input type="submit" class="btn btn-primary" value="Aggiungi all'ordine" />
                     </p>
                 </div>
             </div>
-            
+            <br><br>
             <div class="row gap100">
                 <div class="col-md-6 col-lg-3">
                     <img src="image/Citroën C1.jpg" class="img-fluid" alt="opel">
                 </div>
                 <div class="col-md-6">
                     <h3>Citroën C1</h3>
-                    <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della 
-                        tipografia e della stampa. Lorem Ipsum è considerato il testo 
-                        segnaposto standard sin dal sedicesimo secolo, quando un anonimo 
-                        tipografo prese una cassetta di caratteri e li assemblò per preparare 
+                    <p> Data di ritiro : <input type="date"> <br />
+                        Data di consegna : <input type="date"> <br /> 
+                        Luogo di ritiro : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                        Luogo di consegna : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                            <b>Prezzo giornaliero: 17,50€ </b><br>
+                        <input type="submit" class="btn btn-primary" value="Aggiungi all'ordine" />
                     </p>
                 </div>
             </div>
-            
+            <br><br>
             <div class="row gap100">
                 <div class="col-md-6 col-lg-3">
                     <img src="image/Kia Picanto.jpg" class="img-fluid" alt="opel">
                 </div>
                 <div class="col-md-6">
                     <h3>Kia Picanto</h3>
-                    <p> Lorem Ipsum è un testo segnaposto utilizzato nel settore della 
-                        tipografia e della stampa. Lorem Ipsum è considerato il testo 
-                        segnaposto standard sin dal sedicesimo secolo, quando un anonimo 
-                        tipografo prese una cassetta di caratteri e li assemblò per preparare 
+                    <p> Data di ritiro : <input type="date"> <br />
+                        Data di consegna : <input type="date"> <br /> 
+                        Luogo di ritiro : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                        Luogo di consegna : <select name="luogoconsegna" class="form-control">
+                                <option value="Casalmaggiore">Casalmaggiore</option>
+                                <option value="Parma">Parma</option>
+                                <option value="Cremona">Cremona</option>
+                            </select>
+                            <b>Prezzo giornaliero: 18,40€ </b><br>
+                        <input type="submit" class="btn btn-primary" value="Aggiungi all'ordine" />
                     </p>
                 </div>
             </div>
-
+            </form>
         </div>
     </body>
 </html>

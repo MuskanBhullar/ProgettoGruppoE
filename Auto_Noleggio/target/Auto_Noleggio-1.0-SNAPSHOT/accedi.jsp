@@ -13,10 +13,6 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     </head>
     <body>
-        <div class="bg-image" 
-     style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
-            height: 100vh">
-
         <form action="accedi" method="POST">
             <br> <br>
             <div id="container">
@@ -57,7 +53,6 @@
                     <p>Not a member? <a href="registrati.jsp">Register</a></p>
                 </div>
 
-            </div>
             </div>
         </form>
     </body>

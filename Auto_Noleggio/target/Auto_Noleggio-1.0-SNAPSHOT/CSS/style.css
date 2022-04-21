@@ -6,3 +6,18 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.riga{
+    border-left: 4px solid white;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    top: 120px;
+    border-radius: 2px;
+}

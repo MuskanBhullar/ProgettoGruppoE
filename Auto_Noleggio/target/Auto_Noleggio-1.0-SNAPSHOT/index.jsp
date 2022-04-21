@@ -11,9 +11,16 @@
         <!-- File js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <style>
+            body{
+                overflow: hidden;
+            }
+        </style>
     </head>
     <body>
+        
         <div id="container">
+            <div class="riga"></div> 
             <div class="row justify-content-center">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">
@@ -36,36 +43,75 @@
                                     </div>
                                 </li>
                                 <a class="nav-link" href="ordini.jsp">Ordini</a>
-                                <a class="nav-link" href="accedi.jsp">Accedi</a>
+                                
                             </div>
                         </div>
                     </div>
                 </nav>
             </div>
-            
+
             <style>
                 body{background-image: url("image/road5.jpg")}
             </style>
+
             
-            <div class="row gap100">
-                <div class="col-md-6">
-                    <h2 style="color: white">Benvenuti</h2>
+            <div class="row">
+                <div class="col-md-6 gap100">
+                    <br> <br> <br> <br>
+                    <h2 style="color: white; text-align: center">Benvenuto</h2>
                     <br>
-                    <p style="color: white"> Lorem Ipsum è un testo segnaposto utilizzato nel settore della 
-                        tipografia e della stampa. Lorem Ipsum è considerato il testo 
-                        segnaposto standard sin dal sedicesimo secolo, quando un anonimo 
-                        tipografo prese una cassetta di caratteri e li assemblò per preparare 
+                    <p style="color: white; text-align: center" > Benvenuto in questo sito di noleggio auto. <br>
+                        Attraverso una vasta scelta di auto,  <br> hai la possibilità di poter scegliere l' auto 
+                        perfetta per il tuo stile. <br>
+                        Per poter vedere le nostre auto, bisogna accedere al sito. 
                     </p>
                 </div>
+                  
                 <div class="col-md-6">
-                    <a class="btn btn-primary" href="accedi.jsp" role="button">Accedi</a>
-           
-                    <p style="color: white"> Or </p>
-    
-                    <a class="btn btn-primary" href="registrati.jsp" role="button">Registrati</a>
-                </div>
+                    <form action="accedi" method="POST">
+                        <br> <br> <br>
+                        <div class="row justify-content-center">
+                            <div class="col-12 d-flex justify-content-center">
+                                
+                                <h3 style="color: white">Accedi</h3>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row justify-content-center">
+                            <div class="col-12 d-flex justify-content-center">
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" style="color: white">Email address</label>
+                                    <input type="email" name="emailUtente" class="form-control" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 d-flex justify-content-center">
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" style="color: white">Password</label>
+                                    <input type="password" name="passwordUtente" class="form-control" />
+                                </div>
+
+                            </div>
+                        </div> 
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary btn-block mb-4">Accedi</button>
+                            </div>
+                        </div>
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                            <p style="color: white">Not a member? <a href="registrati.jsp">Register</a></p>
+                        </div>
+
+                    </form>
+                </div>    
             </div>
-            
+
         </div>
     </body>
 </html>
