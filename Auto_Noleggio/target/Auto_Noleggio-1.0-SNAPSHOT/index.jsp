@@ -23,7 +23,7 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav text-center">
-                                <a class="nav-link" href="#">Home</a>
+                                <a class="nav-link" href="index.jsp">Home</a>
 
                                 <li class="nav-item dropdown">
                                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Auto</a>
@@ -31,7 +31,8 @@
                                         <a href="piccole.jsp" class="dropdown-item">Piccole</a>
                                         <a href="medie.jsp" class="dropdown-item">Medie</a>
                                         <a href="suv.jsp" class="dropdown-item">Suv</a>
-                                        <a href="premium" class="dropdown-item">Premium</a>
+                                        <a href="premium.jsp" class="dropdown-item">Premium</a>
+                                        <a href="auto.jsp" class="dropdown-item">All</a>
                                     </div>
                                 </li>
                                 <a class="nav-link" href="ordini.jsp">Ordini</a>
@@ -41,6 +42,30 @@
                     </div>
                 </nav>
             </div>
+            
+            <style>
+                body{background-image: url("image/road5.jpg")}
+            </style>
+            
+            <div class="row gap100">
+                <div class="col-md-6">
+                    <h2 style="color: white">Benvenuti</h2>
+                    <br>
+                    <p style="color: white"> Lorem Ipsum è un testo segnaposto utilizzato nel settore della 
+                        tipografia e della stampa. Lorem Ipsum è considerato il testo 
+                        segnaposto standard sin dal sedicesimo secolo, quando un anonimo 
+                        tipografo prese una cassetta di caratteri e li assemblò per preparare 
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <a class="btn btn-primary" href="accedi.jsp" role="button">Accedi</a>
+           
+                    <p style="color: white"> Or </p>
+    
+                    <a class="btn btn-primary" href="registrati.jsp" role="button">Registrati</a>
+                </div>
+            </div>
+            
         </div>
     </body>
 </html>
