@@ -38,11 +38,16 @@ public class AccediUtente extends HttpServlet {
               }
             }
             
-            response.sendRedirect(request.getContextPath() + "/accedi.jsp");
+            //response.sendRedirect(request.getContextPath() + "/index.jsp");
+            request.setAttribute("messaggio", "Email o password errati");
+            request.setAttribute("coloreMessaggio", "red");
+
+            // Inoltro la richiesta
+            request.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
             
             
         } catch (Exception errore) {
-
+            
         }
 
     }

@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -51,7 +51,7 @@
             </div>
 
             <style>
-                body{background-image: url("image/road5.jpg")}
+                body{background-image: url("image/road6.jpg")}
             </style>
 
             
@@ -76,7 +76,17 @@
                                 <h3 style="color: white">Accedi</h3>
                             </div>
                         </div>
+                       
                         <br>
+                        <% 
+                if (request.getAttribute("coloreMessaggio") != null) {
+            %>
+            <div class="row justify-content-center text-center">
+                <p style="color: ${coloreMessaggio}">${messaggio}</p>
+            </div>
+            <% 
+                } // Chiudo l'if
+            %>
                         <div class="row justify-content-center">
                             <div class="col-12 d-flex justify-content-center">
 
@@ -105,7 +115,7 @@
                         </div>
                         <!-- Register buttons -->
                         <div class="text-center">
-                            <p style="color: white">Not a member? <a href="registrati.jsp">Register</a></p>
+                            <p style="color: white">Non hai ancora un account? <a href="registrati.jsp">Registrati</a></p>
                         </div>
 
                     </form>

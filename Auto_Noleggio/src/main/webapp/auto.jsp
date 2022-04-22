@@ -11,6 +11,7 @@
         <!-- File js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        
     </head>
     <body>
         <div id="container">
@@ -42,9 +43,10 @@
                     </div>
                 </nav>
             </div>
-            <form action="ordini" method="POST">
+            <div style="margin-left: 40px;">
+            <form action="ordini" method="POST"> 
             <div class="row gap100">
-                <div class="col-md-6 col-lg-3">
+                <div class="col-md-6 col-lg-4">
                     <img src="image/Audi Q5.jpg" class="img-fluid" alt="opel">
                 </div>
                 <div class="col-md-6">
@@ -522,6 +524,7 @@
                     </p>
                 </div>
             </div> 
+            </div>
         </div>
     </body>
 </html>
