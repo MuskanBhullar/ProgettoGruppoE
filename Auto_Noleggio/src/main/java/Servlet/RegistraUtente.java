@@ -28,6 +28,7 @@ public class RegistraUtente extends HttpServlet {
             String cognome = request.getParameter("cognomeUtente");
             String email = request.getParameter("emailUtente");
             String password = request.getParameter("passwordUtente");
+            int eta = Integer.parseInt(request.getParameter("etaUtente"));
             
             if (nome.isEmpty() || cognome.isEmpty() || email.isEmpty()|| password.isEmpty()) {
                 request.setAttribute("messaggio", "Hai inserito dei dati errati, scemo.");
@@ -44,8 +45,8 @@ public class RegistraUtente extends HttpServlet {
             // Preparo la query
             Statement query = connessione.createStatement();
 
-            String SQL = "INSERT INTO utenti (nome, cognome, email, password)" + 
-                    "VALUES('" + nome + "', '" + cognome + "', '" + email +"', '" + password +"')";
+            String SQL = "INSERT INTO utenti (nome, cognome, eta, email, password)" + 
+                    "VALUES('" + nome + "', '" + cognome + "', '" + eta + "', '" +email +"', '" + password +"')";
             
             // Eseguo la query
             boolean queryEseguita = query.execute(SQL);

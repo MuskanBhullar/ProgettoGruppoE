@@ -1,4 +1,8 @@
 Database\DatabaseManager.class
-Servlet\LeggiUtenti.class
 Servlet\RegistraUtente.class
+Servlet\InserisciAuto.class
+Models\Auto.class
 Models\Utente.class
+Servlet\LeggiUtenti.class
+Servlet\GestisciSessione.class
+Servlet\AccediUtente.class
