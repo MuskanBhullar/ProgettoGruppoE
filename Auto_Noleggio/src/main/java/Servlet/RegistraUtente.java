@@ -55,14 +55,14 @@ public class RegistraUtente extends HttpServlet {
             request.setAttribute("coloreMessaggio", "green");
 
             // Inoltro la richiesta
-            request.getServletContext().getRequestDispatcher("/registrati.jsp").forward(request, response);
+            request.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
 
             // Chiudo la connesione
             connessione.close();
 
         } catch (Exception errore) {
             // Imposto i parametri
-            request.setAttribute("messaggio", "Si è verificato un errore, contattare l'amministratore.");
+            request.setAttribute("messaggio", "Si è verificato un errore. Riprova!");
             request.setAttribute("coloreMessaggio", "red");
 
             // Inoltro la richiesta

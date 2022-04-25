@@ -11,27 +11,88 @@
         <!-- File js -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <style>
+            body{
+                overflow: hidden;
+            }
+        </style>
     </head>
     <body>
+        
         <div id="container">
-            <div class="row justify-content-center">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand">Auto Noleggio</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav text-center">
-                                <a class="nav-link" href="accedi.jsp">Accedi</a>
-                                <a class="nav-link" href="registrati.jsp">Registrati</a>
-                                <a class="nav-link" href="ordini.jsp">Ordini</a>
-                                <a class="nav-link" href="leggi">Leggi</a>
+            <div class="riga"></div> 
+         
+            <style>
+                body{background-image: url("image/road6.jpg")}
+            </style>
+            
+            <div class="row">
+                <div class="col-md-6 gap100">
+                    <br> <br> <br> <br>
+                    <h2 style="color: white; text-align: center">Benvenuto</h2>
+                    <br>
+                    <p style="color: white; text-align: center" > Benvenuto in questo sito di noleggio auto. <br>
+                        Attraverso una vasta scelta di auto,  <br> hai la possibilità di poter scegliere l' auto 
+                        perfetta per il tuo stile. <br>
+                        Per poter vedere le nostre auto, bisogna accedere al sito. 
+                    </p>
+                </div>
+                  
+                <div class="col-md-6">
+                    <form action="accedi" method="POST">
+                        <br> <br> <br>
+                        <div class="row justify-content-center">
+                            <div class="col-12 d-flex justify-content-center">
+                                
+                                <h3 style="color: white">Accedi</h3>
                             </div>
                         </div>
-                    </div>
-                </nav>
+                       
+                        <br>
+                        <% 
+                if (request.getAttribute("coloreMessaggio") != null) {
+            %>
+            <div class="row justify-content-center text-center">
+                <p style="color: ${coloreMessaggio}">${messaggio}</p>
             </div>
+            <% 
+                } // Chiudo l'if
+            %>
+                        <div class="row justify-content-center">
+                            <div class="col-12 d-flex justify-content-center">
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" style="color: white">Email address</label>
+                                    <input type="email" name="emailUtente" class="form-control" />
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-8 d-flex justify-content-center">
+
+                                <div class="form-outline mb-4">
+                                    <label class="form-label" style="color: white">Password</label>
+                                    <input type="password" name="passwordUtente" class="form-control" />
+                                </div>
+
+                            </div>
+                        </div> 
+
+                        <div class="row justify-content-center">
+                            <div class="col-12 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary btn-block mb-4">Accedi</button>
+                            </div>
+                        </div>
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                            <p style="color: white">Non hai ancora un account? <a href="registrati.jsp">Registrati</a></p>
+                        </div>
+
+                    </form>
+                </div>    
+            </div>
+
         </div>
     </body>
 </html>

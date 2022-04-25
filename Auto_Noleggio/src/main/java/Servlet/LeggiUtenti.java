@@ -1,3 +1,6 @@
+//servlet inutile allo scopo finale del nostro sito
+//key=3->:
+//FRPH LO SURI YHCCRVL 
 package Servlet;
 
 import Database.DatabaseManager;
@@ -60,7 +63,7 @@ public class LeggiUtenti extends HttpServlet {
             request.setAttribute("elencoUtenti", lista);
 
             // Inoltro la richiesta
-            request.getServletContext().getRequestDispatcher("/leggi.jsp").forward(request, response);
+            request.getServletContext().getRequestDispatcher("/WEB-INF/leggi.jsp").forward(request, response);
 
             // Chiudo la connesione
             connessione.close();

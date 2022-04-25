@@ -18,9 +18,7 @@ public class AccediUtente extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-
         try {
-
             String email = request.getParameter("emailUtente");
             String password = request.getParameter("passwordUtente");
 
@@ -30,18 +28,30 @@ public class AccediUtente extends HttpServlet {
             String SQL = "select * from utenti";
             ResultSet risultato = query.executeQuery(SQL);
             
-
+            //controllo se l'email è corretta, se true passo alla password
             while (risultato.next()) {
               if(email.equals(risultato.getString(5))){
                   if(password.equals(risultato.getString(6)))
-                    request.getServletContext().getRequestDispatcher("/WEB-INF/prova.jsp").forward(request, response);;
+                  {
+                    //email e password corretti, creo la sessione per l'utente
+                    HttpSession sessione = request.getSession();
+                    sessione.setAttribute("utente", email);
+                    
+                    request.getServletContext().getRequestDispatcher("/WEB-INF/home.jsp").forward(request, response);
+                  }
               }
             }
-            
-            response.sendRedirect(request.getContextPath() + "/");
+            //se non va nell'ultimo if, email o password sbagliati
+            request.setAttribute("messaggio", "Email o password errati");
+            request.setAttribute("coloreMessaggio", "red");
+
+            // Inoltro la richiesta
+            request.getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
             
             
         } catch (Exception errore) {
+            request.setAttribute("messaggio", "Si è verificato un errore");
+            request.setAttribute("coloreMessaggio", "red");
 
         }
 

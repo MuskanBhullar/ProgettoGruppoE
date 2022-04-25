@@ -1,4 +1,14 @@
-Database\DatabaseManager.class
-Servlet\LeggiUtenti.class
 Servlet\RegistraUtente.class
+Servlet\InserisciOrdine.class
 Models\Utente.class
+Servlet\AggiungiOrdine.class
+Servlet\InserisciMedia.class
+Servlet\InserisciPiccola.class
+Database\DatabaseManager.class
+Models\Ordini.class
+Servlet\InserisciAuto.class
+Models\Auto.class
+Servlet\LeggiUtenti.class
+Servlet\InserisciSuv.class
+Servlet\InserisciPremium.class
+Servlet\AccediUtente.class
