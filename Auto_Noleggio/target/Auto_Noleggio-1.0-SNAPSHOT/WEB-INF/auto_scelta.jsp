@@ -111,8 +111,8 @@
                                                 <option value="Basilicata">Basilicata</option>
                                                 <option value="Calabria">Calabria</option>
                                                 <option value="Campania">Campania</option>
-                                                <option value="Emilia_Romagna">Emilia Romagna</option>
-                                                <option value="Friuli_Venezia_Giulia">Friuli-Venezia Giulia</option>
+                                                <option value="Emilia-Romagna">Emilia-Romagna</option>
+                                                <option value="Friuli-Venezia Giulia">Friuli-Venezia Giulia</option>
                                                 <option value="Lazio">Lazio</option>
                                                 <option value="Liguria">Liguria</option>
                                                 <option value="Lombardia">Lombardia</option>
@@ -123,9 +123,9 @@
                                                 <option value="Sardegna">Sardegna</option>
                                                 <option value="Sicilia">Sicilia</option>
                                                 <option value="Toscana">Toscana</option>
-                                                <option value="Trentino-Alto_Adige">Trentino-Alto Adige</option>
+                                                <option value="Trentino-Alto Adige">Trentino-Alto Adige</option>
                                                 <option value="Umbria">Umbria</option>
-                                                <option value="Val_d_Aosta">Val d'Aosta</option>
+                                                <option value="Valle d'Aosta">Valle d'Aosta</option>
                                                 <option value="Veneto">Veneto</option>
                                             </select>
                                         </div>
@@ -138,8 +138,8 @@
                                                 <option value="Basilicata">Basilicata</option>
                                                 <option value="Calabria">Calabria</option>
                                                 <option value="Campania">Campania</option>
-                                                <option value="Emilia_Romagna">Emilia Romagna</option>
-                                                <option value="Friuli-Venezia_Giulia">Friuli-Venezia Giulia</option>
+                                                <option value="Emilia-Romagna">Emilia-Romagna</option>
+                                                <option value="Friuli-Venezia Giulia">Friuli-Venezia Giulia</option>
                                                 <option value="Lazio">Lazio</option>
                                                 <option value="Liguria">Liguria</option>
                                                 <option value="Lombardia">Lombardia</option>
@@ -150,9 +150,9 @@
                                                 <option value="Sardegna">Sardegna</option>
                                                 <option value="Sicilia">Sicilia</option>
                                                 <option value="Toscana">Toscana</option>
-                                                <option value="Trentino-Alto_Adige">Trentino-Alto Adige</option>
+                                                <option value="Trentino-Alto Adige">Trentino-Alto Adige</option>
                                                 <option value="Umbria">Umbria</option>
-                                                <option value="Val d'Aosta">Val d'Aosta</option>
+                                                <option value="Valle d'Aosta">Valle d'Aosta</option>
                                                 <option value="Veneto">Veneto</option>
                                             </select>
                                         </div>

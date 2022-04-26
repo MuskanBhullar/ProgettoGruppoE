@@ -14,7 +14,6 @@
         <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     </head>
     <body style="background-color: ivory;">
-       
         <div id="container">
             <div class="row justify-content-center">
                 <div class="row justify-content-center">
@@ -58,15 +57,23 @@
                         <%--<div class="col-md-3">
                             <img src="image/${auto.getModello()}.jpg" class="img-fluid" alt="">    
                         </div>--%>
-                        <div class="col-md-6">
+                        
+                        <div class="col-md-3">
+                            <img src="image/${ordine.getModello()}.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="col-md-4">
                             <%--<h1>${elencoModelli[<%i%>]}</h1>--%>
                             <div class="alert alert-secondary" role="alert">
+                                <p><b>Modello:</b> ${ordine.getModello()}</p>
                                 <p><b>Data di ritiro:</b> ${ordine.getDataRitiro()}</p>
                                 <p><b>Data di consegna:</b> ${ordine.getDataConsegna()}</p>
                                 <p><b>Luogo di ritiro:</b> ${ordine.getLuogoRitiro()}</p>
                                 <p><b>Luogo di consegna:</b> ${ordine.getLuogoConsegna()}</p>
+                                <a href="elimina?id_ordine_r=${ordine.getId()}">Elimina Ordine</a>
                             </div>
+                           
                         </div>
+                            
                     </div>
                     <%
                         //i++;

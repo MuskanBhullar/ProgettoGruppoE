@@ -1,14 +1,17 @@
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Servlet\InserisciMedia.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Servlet\InserisciSuv.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Servlet\LeggiUtenti.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Servlet\InserisciOrdine.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Models\Auto.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Servlet\InserisciPremium.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Servlet\InserisciPiccola.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Models\Utente.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Models\Ordini.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Database\DatabaseManager.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Servlet\AccediUtente.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Servlet\InserisciAuto.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Servlet\AggiungiOrdine.java
-C:\Users\condu\OneDrive\Desktop\Auto_Noleggio\src\main\java\Servlet\RegistraUtente.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\AggiungiOrdine.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\InserisciOrdine.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Models\Utente.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\InserisciSuv.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\InserisciAuto.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\EliminaOrdine.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\RegistraUtente.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Models\Auto.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\AccediUtente.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\InserisciPiccola.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\InserisciPremium.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\LeggiOrdini.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\Logout.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Database\DatabaseManager.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\InserisciMedia.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Servlet\LeggiUtenti.java
+C:\Users\muska\Desktop\file manella\Auto_Noleggio\src\main\java\Models\Ordini.java

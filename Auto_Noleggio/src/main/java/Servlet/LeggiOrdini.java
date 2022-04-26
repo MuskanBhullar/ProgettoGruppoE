@@ -32,7 +32,7 @@ public class LeggiOrdini extends HttpServlet {
             String utente = (String)sessione.getAttribute("utente"); 
 
             // Salvo il risultato della query
-            ResultSet risultato = query.executeQuery("select modello,data_ritiro,data_consegna,luogo_ritiro,luogo_consegna,prezzo_giorn,fk_auto,fk_utente"
+            ResultSet risultato = query.executeQuery("select id_ordine,fk_modello,data_ritiro,data_consegna,luogo_ritiro,luogo_consegna,prezzo_giorn,fk_auto,fk_utente"
                     + " from ordini join utenti on id_utente=fk_utente join auto on id_auto=fk_auto where email='"+utente+"'");
             
             ArrayList<Ordini> lista = new ArrayList<>();
@@ -43,7 +43,8 @@ public class LeggiOrdini extends HttpServlet {
             while (risultato.next()) {
 
                 // Estraggo i valori
-                String modello = risultato.getString("modello");
+                int id_ordine = Integer.parseInt(risultato.getString("id_ordine"));
+                String modello = risultato.getString("fk_modello");
                 String dataRitiro = risultato.getString("data_ritiro");
                 String dataConsegna = risultato.getString("data_consegna");
                 String luogoRitiro = risultato.getString("luogo_ritiro");
@@ -52,9 +53,12 @@ public class LeggiOrdini extends HttpServlet {
                 int fk_auto = Integer.parseInt(risultato.getString("fk_auto"));
                 int fk_utente = Integer.parseInt(risultato.getString("fk_utente"));
 
+                modello = modello.replace("_"," ");
+                
                 // Creo l'ordine
-                Ordini ordine = new Ordini(fk_utente, fk_auto, dataRitiro, dataConsegna, luogoRitiro, luogoConsegna);
+                Ordini ordine = new Ordini(id_ordine,fk_utente, fk_auto, dataRitiro, dataConsegna, luogoRitiro, luogoConsegna, modello);
 
+                
                 // Aggiungo l'ordine alla lista
                 lista.add(ordine);
                 
@@ -62,6 +66,7 @@ public class LeggiOrdini extends HttpServlet {
                 
                 //cont++;
             }
+            
             
             if (lista.isEmpty()) { 
                 request.setAttribute("visible", false);
@@ -81,7 +86,8 @@ public class LeggiOrdini extends HttpServlet {
             connessione.close();
 
         } catch (Exception errore) {
-            request.setAttribute("messaggio", errore);
+            request.setAttribute("messaggio", "ciao");
+            request.getServletContext().getRequestDispatcher("/WEB-INF/elenco_ordini.jsp").forward(request, response);
         }
     }
 }

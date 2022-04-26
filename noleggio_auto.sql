@@ -67,22 +67,23 @@ CREATE TABLE `ordini` (
   `data_consegna` date NOT NULL,
   `luogo_ritiro` varchar(50) NOT NULL,
   `luogo_consegna` varchar(50) NOT NULL,
+  `fk_modello` varchar(20) NOT NULL,
   PRIMARY KEY (`id_ordine`),
   KEY `fk_utente` (`fk_utente`),
   KEY `fk_auto` (`fk_auto`),
   CONSTRAINT `ordini_ibfk_1` FOREIGN KEY (`fk_utente`) REFERENCES `utenti` (`id_utente`),
   CONSTRAINT `ordini_ibfk_2` FOREIGN KEY (`fk_auto`) REFERENCES `auto` (`id_auto`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `ordini` */
 
-insert  into `ordini`(`id_ordine`,`fk_utente`,`fk_auto`,`data_ritiro`,`data_consegna`,`luogo_ritiro`,`luogo_consegna`) values 
-(1,1,1,'2022-06-14','2022-06-17','Lombardia','Piemonte'),
-(4,12,12,'2022-04-14','2022-04-30','Abruzzo','Abruzzo'),
-(5,12,1,'2022-04-01','2022-04-02','Friuli-Venezia_Giulia','Abruzzo'),
-(6,12,1,'2022-04-01','2022-04-02','Piemonte','Trentino-Alto_Adige'),
-(8,12,10,'2022-03-03','2022-03-04','Lazio','Lombardia'),
-(10,12,9,'2022-04-01','2022-04-21','Toscana','Toscana');
+insert  into `ordini`(`id_ordine`,`fk_utente`,`fk_auto`,`data_ritiro`,`data_consegna`,`luogo_ritiro`,`luogo_consegna`,`fk_modello`) values 
+(1,1,1,'2022-06-14','2022-06-17','Lombardia','Piemonte',''),
+(4,12,12,'2022-04-14','2022-04-30','Abruzzo','Abruzzo',''),
+(5,12,1,'2022-04-01','2022-04-02','Friuli-Venezia_Giulia','Abruzzo',''),
+(6,12,1,'2022-04-01','2022-04-02','Piemonte','Trentino-Alto_Adige',''),
+(8,12,10,'2022-03-03','2022-03-04','Lazio','Lombardia',''),
+(10,12,9,'2022-04-01','2022-04-21','Toscana','Toscana','');
 
 /*Table structure for table `utenti` */
 

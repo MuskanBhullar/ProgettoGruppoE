@@ -4,11 +4,14 @@ Models\Utente.class
 Servlet\AggiungiOrdine.class
 Servlet\InserisciMedia.class
 Servlet\InserisciPiccola.class
+Servlet\Logout.class
 Database\DatabaseManager.class
 Models\Ordini.class
 Servlet\InserisciAuto.class
 Models\Auto.class
+Servlet\LeggiOrdini.class
 Servlet\LeggiUtenti.class
 Servlet\InserisciSuv.class
+Servlet\EliminaOrdine.class
 Servlet\InserisciPremium.class
 Servlet\AccediUtente.class

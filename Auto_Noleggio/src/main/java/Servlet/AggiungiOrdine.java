@@ -81,8 +81,8 @@ public class AggiungiOrdine extends HttpServlet {
                 id_utente=risultato2.getString("id_utente");
             }
 
-            String SQL = "INSERT INTO ordini (fk_utente,fk_auto,data_ritiro,data_consegna,luogo_ritiro,luogo_consegna)"
-                    + " VALUES("+id_utente+","+id_auto+",'"+dataRitiro+"','"+dataConsegna+"','"+luogoRitiro+"','"+luogoConsegna+"')";
+            String SQL = "INSERT INTO ordini (fk_utente,fk_auto,data_ritiro,data_consegna,luogo_ritiro,luogo_consegna,fk_modello)"
+                    + " VALUES("+id_utente+","+id_auto+",'"+dataRitiro+"','"+dataConsegna+"','"+luogoRitiro+"','"+luogoConsegna+"','"+modello+"')";
             
             // Eseguo la query
             boolean queryEseguita = query.execute(SQL);
